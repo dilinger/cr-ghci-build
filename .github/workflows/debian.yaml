@@ -23,7 +23,7 @@ defaults:
     shell: bash
 
 env:
-  BUILD_ENV: DEB_BUILD_ARCH=amd64 DEB_HOST_ARCH=amd64 DEB_BUILD_OPTIONS=terse
+  BUILD_ENV: DEB_BUILD_ARCH=arm64 DEB_HOST_ARCH=arm64 DEB_BUILD_OPTIONS=terse
   DEBIAN_APT_URL: http://debian-archive.trafficmanager.net/debian
   DEBIAN_RELEASE: ${{inputs.release}}
   N_SPLIT: ${{inputs.n-split}}
